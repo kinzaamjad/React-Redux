@@ -34,7 +34,7 @@ function Navbar() {
       <nav className="navbar navbar-expand-lg text-light bg-secondary">
         <div className="container-fluid">
           <Link to="/" className="navbar-brand text-light fw-bold">
-            Navbar
+            React Redux Project
           </Link>
           <Link to="/card" className="btn btn-secondary">
             <div className="d-flex align-items-center">
