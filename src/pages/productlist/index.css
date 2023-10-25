@@ -1,0 +1,201 @@
+body {
+  margin-top: 20px;
+  background: #dddddd89;
+}
+
+.link-p {
+  display: block;
+  min-height: 250px;
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* TABLES */
+.table {
+  border-collapse: separate;
+}
+.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th {
+  background-color: rgba(255, 255, 255, 0.377);
+}
+.table thead > tr > th {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.395);
+  padding-bottom: 0;
+}
+.table tbody > tr > td {
+  font-size: 0.875em;
+  background: rgba(255, 255, 255, 0.475);
+  border-top: 10px solid rgba(255, 255, 255, 0.436);
+  vertical-align: middle;
+  padding: 12px 8px;
+}
+.table tbody > tr > td:first-child,
+.table thead > tr > th:first-child {
+  padding-left: 20px;
+}
+.table thead > tr > th span {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.363);
+  display: inline-block;
+  padding: 0 5px;
+  padding-bottom: 5px;
+  font-weight: normal;
+}
+.table thead > tr > th > a span {
+  color: rgba(255, 255, 255, 0.589);
+}
+.table thead > tr > th > a span:after {
+  content: "\f0dc";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  margin-left: 5px;
+  font-size: 0.75em;
+}
+.table thead > tr > th > a.asc span:after {
+  content: "\f0dd";
+}
+.table thead > tr > th > a.desc span:after {
+  content: "\f0de";
+}
+.table thead > tr > th > a:hover span {
+  text-decoration: none;
+  color: #2bb6a3;
+  border-color: #2bb6a3;
+}
+.table.table-hover tbody > tr > td {
+  -webkit-transition: background-color 0.15s ease-in-out 0s;
+  transition: background-color 0.15s ease-in-out 0s;
+}
+.table tbody tr td .call-type {
+  display: block;
+  font-size: 0.75em;
+  text-align: center;
+}
+.table tbody tr td .first-line {
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 1.125em;
+}
+.table tbody tr td .first-line span {
+  font-size: 0.875em;
+  color: black;
+  font-weight: 300;
+}
+.table tbody tr td .second-line {
+  font-size: 0.875em;
+  line-height: 1.2;
+}
+.table a.table-link {
+  margin: 0 5px;
+  font-size: 1.125em;
+}
+.table a.table-link:hover {
+  text-decoration: none;
+  color: #2aa493;
+}
+.table a.table-link.danger {
+  color: #fe635f;
+}
+.table a.table-link.danger:hover {
+  color: #dd504c;
+}
+
+.table-products tbody > tr > td {
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  -webkit-transition: background-color 0.15s ease-in-out 0s;
+  transition: background-color 0.15s ease-in-out 0s;
+  position: relative;
+}
+.table-products tbody > tr:hover > td {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.164);
+}
+.table-products .name {
+  display: block;
+  font-weight: 600;
+  padding-bottom: 7px;
+}
+.table-products .price {
+  display: block;
+  text-decoration: none;
+  width: 50%;
+  float: left;
+  font-size: 0.875em;
+}
+.table-products .price > i {
+  color: rgba(255, 255, 255, 0);
+}
+.table-products .warranty {
+  display: block;
+  text-decoration: none;
+  width: 50%;
+  float: left;
+  font-size: 0.875em;
+}
+.table-products .warranty > i {
+  color: #f1c40f;
+}
+.table tbody > tr.table-line-fb > td {
+  background-color: rgba(255, 255, 255, 0.285);
+  color: rgba(255, 255, 255, 0.443);
+}
+.table tbody > tr.table-line-twitter > td {
+  background-color: #9fccff;
+  color: rgba(255, 255, 255, 0.454);
+}
+.table tbody > tr.table-line-plus > td {
+  background-color: #eea59c;
+  color: rgba(255, 255, 255, 0.215);
+}
+.table-stats .status-social-icon {
+  font-size: 1.9em;
+  vertical-align: bottom;
+}
+.table-stats .table-line-fb .status-social-icon {
+  color: rgba(255, 255, 255, 0.285);
+}
+.table-stats .table-line-twitter .status-social-icon {
+  color: rgba(255, 255, 255, 0.297);
+}
+.table-stats .table-line-plus .status-social-icon {
+  color: rgba(255, 255, 255, 0.226);
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;
+  border-radius: 20px;
+  padding: 6px;
+}
+
+.quantity-button {
+  background: #c0c0c04f;
+  border: rgba(255, 255, 255, 0.237);
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.quantity-button-left {
+  border-right: 1px solid rgba(255, 255, 255, 0.566);
+}
+
+.quantity-button-right {
+  border-left: 1px solid rgba(255, 255, 255, 0.402);
+}
+
+.quantity-display {
+  font-size: 16px;
+}
